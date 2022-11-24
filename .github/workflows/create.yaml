@@ -20,7 +20,7 @@ jobs:
           pip install -r requirements.txt 
           
       - name: Archive code coverage results
-        working-directory: ./gitaction_test
+        uses: actions/checkout@v3
         run: |
           python src/main.py
 
