@@ -21,6 +21,7 @@ jobs:
           
       - name: Archive code coverage results
         run: |
+          cd github_action
           python src/main.py
 
       - name: commit files
