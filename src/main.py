@@ -4,8 +4,9 @@ import numpy as np
 import os
 
 # %%
-SOMETHING = os.path.join(os.getcwd(), 'data', 'something.csv')
-RESULTS = os.path.join(os.getcwd(), 'results')
+PARENT_PATH = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+SOMETHING = os.path.join(PARENT_PATH, 'data', 'something.csv')
+RESULTS = os.path.join(PARENT_PATH, 'results')
 
 # %%
 isExist = os.path.exists(RESULTS)

@@ -20,7 +20,7 @@ jobs:
           pip install -r requirements.txt 
           
       - name: Archive code coverage results
-        run: python main.py
+        run: python src/main.py
 
       - name: commit files
         run: |
