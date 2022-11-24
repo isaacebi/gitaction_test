@@ -22,7 +22,7 @@ jobs:
       - name: Archive code coverage results
         working-directory: ./gitaction_test
         run: |
-          python ./src/main.py
+          python src/main.py
 
       - name: commit files
         run: |
