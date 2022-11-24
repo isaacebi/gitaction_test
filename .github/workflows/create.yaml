@@ -20,7 +20,9 @@ jobs:
           pip install -r requirements.txt 
           
       - name: Archive code coverage results
-        run: python ./src/main.py
+        working-directory: ./gitaction_test
+        run: |
+          python ./src/main.py
 
       - name: commit files
         run: |
